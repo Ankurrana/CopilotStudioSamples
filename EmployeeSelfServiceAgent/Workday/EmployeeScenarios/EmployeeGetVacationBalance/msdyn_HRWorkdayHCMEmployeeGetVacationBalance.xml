@@ -15,7 +15,6 @@
             <value>{Employee_ID}</value>
           </parameter>
         </requestParameters>
-
         <responseProperties>
   <!-- Remaining balance -->
   <property>
@@ -69,6 +68,9 @@
             <bsvc:ID bsvc:type="Employee_ID">{Employee_ID}</bsvc:ID>
           </bsvc:Employee_Reference>
         </bsvc:Request_Criteria>
+        <bsvc:Response_Filter>
+            <bsvc:As_Of_Effective_Date>{As_Of_Effective_Date}</bsvc:As_Of_Effective_Date>
+        </bsvc:Response_Filter>
         
         <!-- Response Filter (pagination) -->
         <bsvc:Response_Filter>
